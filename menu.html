@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0a0908">
+<title>メニュー｜黒毛和牛 福苑（ふくえん）</title>
+<meta name="description" content="黒毛和牛 福苑のメニュー一覧。厳選された黒毛和牛の各部位から、ホルモン、サイドメニュー、ドリンク、デザートまで幅広くご用意しております。">
+<meta property="og:title" content="メニュー｜黒毛和牛 福苑">
+<meta property="og:description" content="厳選黒毛和牛をはじめ、ホルモン・サイドメニュー・ドリンク・デザートまで全メニューをご紹介。">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,500;1,600&family=Noto+Serif+JP:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- ================= HEADER ================= -->
+<header class="header" id="header">
+  <div class="header__inner">
+    <a href="index.html" class="header__logo">福苑<small>FUKUEN YAKINIKU</small></a>
+    <nav class="nav__desktop">
+      <a href="index.html">TOP</a>
+      <a href="menu.html" aria-current="page">メニュー</a>
+      <a href="course.html">コース</a>
+      <a href="access.html">アクセス</a>
+      <a href="index.html#reservation" class="is-cta">ご予約</a>
+    </nav>
+    <button class="nav__toggle" id="navToggle" aria-label="メニューを開く">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="nav__overlay" id="navOverlay"></div>
+<nav class="nav__menu" id="navMenu">
+  <a href="index.html">TOP</a>
+  <a href="menu.html" aria-current="page">メニュー</a>
+  <a href="course.html">コース</a>
+  <a href="access.html">アクセス</a>
+  <a href="index.html#reservation" class="is-cta">ご予約</a>
+</nav>
+
+<!-- ================= PAGE HERO ================= -->
+<section class="page-hero page-hero--menu">
+  <div class="page-hero__inner">
+    <p class="page-hero__label fade-in">Menu</p>
+    <h1 class="page-hero__title fade-in delay-1">メニュー</h1>
+    <p class="page-hero__desc fade-in delay-2">厳選黒毛和牛から、ホルモン・サイドメニュー・ドリンク・デザートまで。</p>
+  </div>
+</section>
+
+<!-- ================= MENU (FULL) ================= -->
+<section class="menu section">
+  <div class="container">
+    <div class="menu__tabs fade-in" role="tablist">
+      <button class="menu__tab is-active" data-tab="wagyu" role="tab" aria-selected="true">和牛</button>
+      <button class="menu__tab" data-tab="horumon" role="tab" aria-selected="false">ホルモン</button>
+      <button class="menu__tab" data-tab="side" role="tab" aria-selected="false">サイドメニュー</button>
+      <button class="menu__tab" data-tab="drink" role="tab" aria-selected="false">ドリンク</button>
+      <button class="menu__tab" data-tab="dessert" role="tab" aria-selected="false">デザート</button>
+    </div>
+
+    <div class="menu__panels fade-in delay-1">
+      <ul class="menu__panel is-active" id="wagyu">
+        <li><span class="menu__name">特上カルビ</span><span class="menu__dots"></span><span class="menu__price">¥2,800</span></li>
+        <li><span class="menu__name">黒毛和牛ロース</span><span class="menu__dots"></span><span class="menu__price">¥2,400</span></li>
+        <li><span class="menu__name">シャトーブリアン</span><span class="menu__dots"></span><span class="menu__price">¥4,800</span></li>
+        <li><span class="menu__name">ザブトン</span><span class="menu__dots"></span><span class="menu__price">¥3,200</span></li>
+        <li><span class="menu__name">牛タン塩</span><span class="menu__dots"></span><span class="menu__price">¥1,600</span></li>
+        <li><span class="menu__name">厚切り牛タン</span><span class="menu__dots"></span><span class="menu__price">¥2,200</span></li>
+        <li><span class="menu__name">ハラミ</span><span class="menu__dots"></span><span class="menu__price">¥1,400</span></li>
+      </ul>
+
+      <ul class="menu__panel" id="horumon">
+        <li><span class="menu__name">ミノ</span><span class="menu__dots"></span><span class="menu__price">¥980</span></li>
+        <li><span class="menu__name">テッチャン</span><span class="menu__dots"></span><span class="menu__price">¥880</span></li>
+        <li><span class="menu__name">レバー</span><span class="menu__dots"></span><span class="menu__price">¥780</span></li>
+        <li><span class="menu__name">コブクロ</span><span class="menu__dots"></span><span class="menu__price">¥780</span></li>
+      </ul>
+
+      <ul class="menu__panel" id="side">
+        <li><span class="menu__name">石焼きビビンバ</span><span class="menu__dots"></span><span class="menu__price">¥980</span></li>
+        <li><span class="menu__name">冷麺</span><span class="menu__dots"></span><span class="menu__price">¥880</span></li>
+        <li><span class="menu__name">クッパ</span><span class="menu__dots"></span><span class="menu__price">¥780</span></li>
+        <li><span class="menu__name">キムチ盛り合わせ</span><span class="menu__dots"></span><span class="menu__price">¥680</span></li>
+        <li><span class="menu__name">ナムル盛り合わせ</span><span class="menu__dots"></span><span class="menu__price">¥580</span></li>
+      </ul>
+
+      <ul class="menu__panel" id="drink">
+        <li><span class="menu__name">生ビール</span><span class="menu__dots"></span><span class="menu__price">¥650</span></li>
+        <li><span class="menu__name">マッコリ</span><span class="menu__dots"></span><span class="menu__price">¥580</span></li>
+        <li><span class="menu__name">焼酎（一合）</span><span class="menu__dots"></span><span class="menu__price">¥780</span></li>
+        <li><span class="menu__name">ハイボール</span><span class="menu__dots"></span><span class="menu__price">¥550</span></li>
+        <li><span class="menu__name">ノンアルコール</span><span class="menu__dots"></span><span class="menu__price">¥480</span></li>
+        <li><span class="menu__name">コーラ</span><span class="menu__dots"></span><span class="menu__price">¥380</span></li>
+        <li><span class="menu__name">ジンジャーエール</span><span class="menu__dots"></span><span class="menu__price">¥380</span></li>
+        <li><span class="menu__name">オレンジジュース</span><span class="menu__dots"></span><span class="menu__price">¥380</span></li>
+        <li><span class="menu__name">ウーロン茶</span><span class="menu__dots"></span><span class="menu__price">¥380</span></li>
+      </ul>
+
+      <ul class="menu__panel" id="dessert">
+        <li><span class="menu__name">特製わらび餅</span><span class="menu__dots"></span><span class="menu__price">¥680</span></li>
+        <li><span class="menu__name">黒蜜ジェラート</span><span class="menu__dots"></span><span class="menu__price">¥580</span></li>
+        <li><span class="menu__name">抹茶テリーヌ</span><span class="menu__dots"></span><span class="menu__price">¥780</span></li>
+        <li><span class="menu__name">季節のフルーツパフェ</span><span class="menu__dots"></span><span class="menu__price">¥980</span></li>
+        <li><span class="menu__name">自家製プリン</span><span class="menu__dots"></span><span class="menu__price">¥580</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CTA ================= -->
+<section class="cta-section section section--alt">
+  <div class="container">
+    <div class="section-head fade-in">
+      <span class="section-label">Course</span>
+      <h2 class="section-title">コースもおすすめです</h2>
+      <div class="divider"><span></span></div>
+    </div>
+    <p class="section-lead fade-in">記念日やご接待には、人気メニューを盛り込んだお得なコースもご用意しております。</p>
+    <div class="cta-section__buttons fade-in delay-1">
+      <a href="course.html" class="btn btn--outline">コースを見る</a>
+      <a href="index.html#reservation" class="btn btn--gold">ご予約はこちら</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= RESERVATION ================= -->
+<section class="reservation section">
+  <div class="container reservation__inner">
+    <div class="fade-in">
+      <span class="section-label">Reservation</span>
+      <h2 class="section-title">ご予約</h2>
+      <div class="divider"><span></span></div>
+    </div>
+    <p class="fade-in delay-1">特別な夜のひとときを、ぜひ福苑で。<br>コース・個室のご予約はお電話にて承っております。</p>
+    <a href="tel:0312345678" class="btn btn--phone fade-in delay-2">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+      </svg>
+      <span class="btn__text">
+        <small>お電話でのご予約</small>
+        <strong>03-1234-5678</strong>
+      </span>
+    </a>
+    <p class="reservation__note fade-in delay-3">受付時間 17:00〜22:00（定休日：水曜日）</p>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="container footer__inner">
+    <div>
+      <p class="footer__logo">黒毛和牛 福苑</p>
+      <p class="footer__catch">本物の肉と、最高の夜を。</p>
+    </div>
+    <nav class="footer__nav">
+      <a href="index.html">TOP</a>
+      <a href="menu.html" aria-current="page">メニュー</a>
+      <a href="course.html">コース</a>
+      <a href="access.html">アクセス</a>
+      <a href="index.html#reservation">ご予約</a>
+    </nav>
+    <div class="footer__sns">
+      <a href="https://www.instagram.com/fukuen_yakiniku/" target="_blank" rel="noopener noreferrer">Instagram @fukuen_yakiniku</a>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <p>東京都調布市仙川町2-5-10　福苑ビル1F ｜ 営業時間 17:00-23:00 ｜ 定休日 水曜日</p>
+    <p>&copy; 2026 黒毛和牛 福苑. All Rights Reserved.</p>
+  </div>
+  <p class="footer__disclaimer">※当サイトは架空の店舗によるデモサイトです。掲載の情報・画像はサンプルです。</p>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
